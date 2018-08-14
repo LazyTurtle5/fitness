@@ -1,0 +1,161 @@
+$color-primary: #a2ca28; // light green
+$color-secondary: #fd634e; // red
+$color-dark: #0d1119; // dark blue
+$color-plain: #fff; // white
+
+// General ---------------------------/
+
+.img-response {
+	width: 100%;
+}
+
+.squares {
+	padding: 0;
+}
+
+// Mixin ---------------------------/
+
+@mixin boxes {
+	background-color: $color-plain;
+	height: 100%;
+	text-align: center;
+	padding: 0 5%;
+	.span {
+		color: $color-secondary;
+		font-size: 14px;
+		text-transform: uppercase;
+		padding-top: 10%;
+	}
+	h2 {
+		color: $color-primary;
+		font-size: 35px;
+		text-transform: uppercase;
+	}
+	p {
+		font-size: 14px;
+		color: black;
+	}
+	a {
+		color: $color-primary;
+		text-decoration: underline;
+	}
+}
+
+
+// Navigation ---------------------------/
+
+.nav-link {
+	color: $color-plain;
+	@media (min-width: 768px) {
+		margin: 0 10px;
+	}
+	@media (min-width: 992px) {
+		margin: 0 20px;
+	}
+	@media (min-width: 1200px) { 
+		margin: 0 30px;
+	}
+}
+
+.navbar-toggler {
+	border: 2px solid $color-primary;
+	&:hover {
+		background-color: $color-primary;
+	}
+}
+
+// Header ---------------------------/
+
+#header {
+	background-image: url('../img/header.png');
+	background-size: cover;
+	height: 800px;
+}
+
+
+// Green section ---------------------------/
+
+#green {
+	background-color: $color-primary;
+	color: $color-plain;
+}
+
+.info {
+	a {
+		color: $color-plain;
+	}
+	p {
+		padding-bottom: 2.5rem;
+	}
+	@media (max-width: 767px) {
+		p {
+		padding-bottom: 1.5rem;
+	}
+	}
+	@media (min-width: 768px) and (max-width: 991.98px) {
+		span {
+			position: absolute;
+			bottom: 50px;
+		}
+		.text-box {
+			padding: 10% 0;
+		}
+	}
+	@media (min-width: 992px) {
+		padding: 10% 0;
+		h3{
+			padding: 10px 0;
+		}
+		
+		span {
+			position: absolute;
+			bottom: 0;
+		}
+	}
+}
+
+.image {
+	height: 44px;
+	margin-bottom: 2%;
+}
+
+@media (max-width: 767px) {
+		.text-box {
+			padding: 10% 0;
+		}
+
+
+	}
+
+
+.boxes {
+	@include boxes;
+	.blob {
+		padding: 2.5% 0;
+		margin-bottom: .5rem;
+	}
+	@media (max-width: 992px) { 
+		.span {
+			padding-top: 5%;
+		}
+	}
+}
+
+@media (max-width: 992px) { 
+		.info-link {
+			display: block;
+			padding-bottom: 5%;
+		}
+		.squares-hidden {
+		display: none;
+		}
+	}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+		.text-box {
+		padding-bottom: 50px;
+		}
+	}
+
+
+
