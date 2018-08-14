@@ -4,18 +4,18 @@
         <meta charset="UTF-8">
         <title>Fitness</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/styles.css" >
+        <link rel="stylesheet" href="css/style.css" >
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     </head>
 <body>
 
-<section>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#">Fitness</a>
-	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+<section id="header">
+	<nav class="navbar navbar-expand-md">
+		<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+	  	<button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 	    	<span class="navbar-toggler-icon"></span>
 	  	</button>
-	  	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	  	<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
 	    	<div class="navbar-nav">
 		      	<a class="nav-item nav-link" href="#">About <span class="sr-only">(current)</span></a>
 		      	<a class="nav-item nav-link" href="#">How It Works</a>
@@ -25,7 +25,7 @@
 	    	</div>
 	  	</div>
 	</nav>
-	<div class="header">
+	<div class="title">
 		<h1>Fitness In A Can<span>/</span></h1>
 		<h5>Yes You Can<span>/</span></h5>
 	</div>
@@ -33,52 +33,139 @@
 
 <section id="green">
 	<div class="container">
-		<div class="row">
-			<div class="col-md-3">
-				<h3>Resources</h3>
-				<p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable client groups. Easily manage your inspiration and work-in-progress</p>
-				<a href="#">Explore More &#8594;</a>
-			</div>
-			<div class="col-md-3">
-				<h3>Training & Funding</h3>
-				<p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable client groups. </p>
-				<a href="#">Browse Training &#8594;</a>
-			</div>
-			<div class="col-md-3">
-				<h3>Connect</h3>
-				<p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable client groups. Easily manage your inspiration.</p>
-				<a href="#">Connect Now &#8594;</a>
-			</div>
-			<div class="col-md-3">
-				<h3>Communicate</h3>
-				<p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable client groups. Easily </p>
-				<a href="#">Start Now &#8594;</a>
+		<div class="info">
+			<div class="row">
+				<div class="col-md-6 col-lg-3 box">
+					<div class="text-box">
+						<div class="image">
+							<img src="img/case.png">
+						</div>
+						<h3>Resources</h3>
+						<p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable client groups. Easily manage your inspiration and work-in-progress</p>
+						<span class="link"><a href="#">Explore More &#8594;</a></span>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 box">
+					<div class="text-box">
+						<div class="image">
+							<img src="img/timer.png">
+						</div>
+						<h3>Training & Funding</h3>
+						<p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable client groups. </p>
+						<span class="link"><a href="#">Browse Training &#8594;</a></span>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 box">
+					<div class="text-box">
+						<div class="image">
+							<img src="img/cloud.png">
+						</div>
+						<h3>Connect</h3>
+						<p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable client groups. Easily manage your inspiration.</p>
+						<span class="link"><a href="#">Connect Now &#8594;</a></span>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 box">
+					<div class="text-box">
+						<div class="image">
+							<img src="img/speech.png">
+						</div>
+						<h3>Communicate</h3>
+						<p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable client groups. Easily </p>
+						<span class="link"><a href="#">Start Now &#8594;</a></span>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-4">
-				<span>It's All About</span>
-				<h2>Fitness First</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-				<a href="#">Read More</a>
+			<div class="col-lg-4 squares">
+				<div class="boxes">
+					<p class="span">It's All About</p>
+					<h2>Fitness First</h2>
+					<img class="blob" src="img/blob.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+					<a href="#" class="info-link">Read More</a>
+				</div>
 			</div>
-			<div class="col-md-8">
-				<img src="img/stretch.png">
+			<div class="col-lg-8 squares">
+				<img class="img-response" src="img/stretch.png">
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-8">
-				<img src="img/watch.png">
+			<div class="col-lg-8 squares squares-hidden">
+				<img class="img-response" src="img/watch.png">
 			</div>
-			<div class="col-md-4">
-				<span>Love Your</span>
-				<h2>Your Body</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-				<a href="#">Read More</a>
+			<div class="col-lg-4 squares">
+				<div class="boxes">
+					<p class="span">Love Your</p>
+					<h2>Your Body</h2>
+					<img class="blob" src="img/blob.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+					<a class="info-link" href="#">Read More</a>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
+
+<section id="red">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<img class="img-response" src="img/jogging.png">
+				<p>Track Your</p>
+				<h2>Lifestyle</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+			</div>
+			<div class="col-md-8">
+				<img class="img-response" src="img/beach.png">
+				<h2>Summer of Fun</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8">
+				<img class="img-response" src="img/grapes.png">
+				<p>Track Your</p>
+				<h2>Get Involved in Yourself</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillumdolore eu fugiat nulla pariatur.</p>
+			</div>
+			<div class="col-md-4">
+				<img class="img-response" src="img/avocado.png">
+				<p>Improve Your</p>
+				<h2>Eating Habits</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="ideas">
+	<div class="container">
+		<div class="text">
+			<h2>We launch leaders with big ideas</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<h5>Resources</h5>
+				<p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable client groups. work-in-progress by dragging images into projects and sharable client group</p>
+			</div>
+			<div class="col-md-5">
+				<h5>About Us</h5>
+				<p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable client groups. work-in-progress by dragging images into projects and sharable client group</p>
+			</div>
+			<div class="col-md-3">
+				<h5>Stay in touch</h5>
+			</div>
+		</div>
+	</div>
+</footer>
 
   
 
